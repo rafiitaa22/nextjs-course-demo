@@ -48,7 +48,7 @@ export async function getStaticProps() {
         id: meetup._id.toString(),
       })),
     },
-    revalidate: 10,
+    revalidate: 1,
   }; //always an object! with props property and
   //another object, estas props son las que recibe el componente
 }
