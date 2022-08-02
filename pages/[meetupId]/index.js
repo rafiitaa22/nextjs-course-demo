@@ -38,7 +38,7 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   const meetupId = context.params.meetupId;
 
   const client = await MongoClient.connect(
